@@ -35,7 +35,7 @@ arr_delay_model = load_model("opt_arr_delay_model.booster")
 
 # Load reason model from pickle
 try:
-    with open("opt_delay_reason_model.pkl", 'rb') as file:
+    with open("models/opt_delay_reason_model.pkl", 'rb') as file:
         delay_reason_model = pickle.load(file)
     logger.info("Loaded delay reason model successfully.")
 except Exception as e:
